@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Tip Calculator</h1>
     <div class="container">
+        <h1 class="title">Tip Calculator</h1>
         <div class="row">
             <span class="text">Bill Amount:</span>
-            <input class="value" type="text">
+            <input class="value" type="text" placeholder='$ 0.00' maxlength="50">
         </div>
         <div class="row">
             <span class="text">Percentage tip:</span>
-            <input class="value" type="text">
+            <input class="value" type="text" placeholder='0 %' maxlength="10">
         </div>
         <div class="row">
             <span class="text">Tip amount:</span>
-            <input class="value" type="text">
+            <div id='tip-total' class='result tip'></div>
         </div>
         <div class="row">
-            <span class="text">Total</span>
-            <input class="value" type="text">
+            <span class="text">Total:</span>
+            <div id='total' class='result total'></div>
+        </div>
+        <div class="row">
+            <input class='button' type="button" value='Count'>
         </div>
     </div>
-    <script src='./main.js'></script>
+    <script src='./js/main.js' type='module'></script>
 </body>
 </html>
